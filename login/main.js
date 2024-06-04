@@ -5,6 +5,7 @@ const password = document.querySelector(".passwordInput")
 const infoList = {
   sumin: "1234",
   mango: "6789",
+  apple: "000000",
 }
 
 function login() {
