@@ -6,4 +6,4 @@
 
 * 현재 입력된 infoList의 값은 "sumin : 1234"와 "mango : 6789" 입니다.
 
-* [로그인기능](/login/로그인.gif)
+* [로그인기능 예시](/login/로그인.gif)
