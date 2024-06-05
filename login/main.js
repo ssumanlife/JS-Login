@@ -9,6 +9,9 @@ const infoList = {
 }
 
 function login() {
+  // const loginId = document.querySelector(".idInput")
+  // const password = document.querySelector(".passwordInput")
+
   let a = loginId.value
   if (infoList[a] != undefined && infoList[a] != null) {
     if (infoList[a] === password.value) {
@@ -21,5 +24,6 @@ function login() {
   }
 }
 
-// 데이터의 실행 순서에 맞게 HTML Button요소에 이벤트 핸들러 속성 추가
-// btn.addEventListener("click", login())
+// js파일이 읽혀내려가는 순간 login()가 실행되는 것을 막기위해 콜백함수를 핸들러로 적용
+// 콜백함수는 특정한 실행 위치를 보장해주는 용도로 활용!!
+btn.addEventListener("click", () => login())
