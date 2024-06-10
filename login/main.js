@@ -1,6 +1,6 @@
 const btn = document.querySelector(".btn")
-const loginId = document.querySelector(".idInput")
-const password = document.querySelector(".passwordInput")
+const loginId = document.querySelector(".userID")
+const password = document.querySelector(".userPW")
 
 const infoList = {
   sumin: "1234",
@@ -9,9 +9,10 @@ const infoList = {
 }
 
 function login() {
-  if (infoList[loginId.value] != undefined && infoList[loginId.value] != null) {
-    if (infoList[loginId.value] === password.value) {
-      alert(`환영합니다. ${loginId.value}님!`)
+  let userId = loginId.value
+  if (infoList[userId] != undefined && infoList[userId] != null) {
+    if (infoList[userId] === password.value) {
+      alert(`환영합니다. ${userId}님!`)
     } else {
       alert("비밀번호를 확인해주세요.")
     }
